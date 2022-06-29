@@ -1,13 +1,11 @@
-aside {
+.crx-target {
   position: fixed;
   left: 50vw;
-  top: 50vh;
+  top: 20vh;
   transform: translate(-50%);
 
   padding: 1rem;
   margin: 0 auto;
-  /* background-color: #ffebe7; */
+  background-color: lightgray;
   border-radius: 0.5em;
-
-  /* display: none; */
 }

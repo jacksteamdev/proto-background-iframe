@@ -1,11 +1,12 @@
+import Content from './Content.svelte'
 import './content.css'
 
-console.log('content')
+console.log('content script')
 
-const iframeSrc = chrome.runtime.getURL('/src/background.html')
-const html = `<aside id="crx-target"><iframe src=${iframeSrc}></iframe></aside>`
+const html = `<aside class="crx-target"></aside>`
 const div = new DOMParser().parseFromString(html, 'text/html').body
   .firstElementChild
-document.documentElement.append(div)
+document.body.append(div)
 
-export {}
+const target = div.attachShadow({ mode: 'open' })
+new Content({ target })
