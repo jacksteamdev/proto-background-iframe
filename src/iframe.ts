@@ -1,6 +1,6 @@
-import Background from './Background.svelte'
+import Iframe from './Iframe.svelte'
 
-console.log('background iframe')
+console.log('iframe extension page')
 
 const html = `<div id="crx-target"></div>`
 const div = new DOMParser().parseFromString(html, 'text/html').body
@@ -8,4 +8,4 @@ const div = new DOMParser().parseFromString(html, 'text/html').body
 document.body.append(div)
 
 const target = div.attachShadow({ mode: 'open' })
-new Background({ target })
+new Iframe({ target })

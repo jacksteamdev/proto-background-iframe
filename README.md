@@ -15,7 +15,13 @@ You should hide this element (`display: none`) in an actual implementation.
 ### Advantages
 
 1. Unlike a service worker, this is a persistent environment; as long as the portal is open, the iframe environment exists.
-2. The iframe document has access to the Chrome API.
+2. The iframe document has access to the Chrome API. Verified APIs:
+   1. `chrome.tabs` events & methods
+   2. `chrome.storage` events & methods
+   3. `chrome.commands` event
+   4. `chrome.webNavigation` events
+   5. `chrome.system.display` events
+   6. `chrome.idle` events
 3. The iframe document has access to DOM-related APIs.
 4. The extension service worker can be much smaller, thus lighter to load.
 
