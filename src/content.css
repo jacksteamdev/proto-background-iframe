@@ -1,0 +1,13 @@
+aside {
+  position: fixed;
+  left: 50vw;
+  top: 50vh;
+  transform: translate(-50%);
+
+  padding: 1rem;
+  margin: 0 auto;
+  /* background-color: #ffebe7; */
+  border-radius: 0.5em;
+
+  /* display: none; */
+}

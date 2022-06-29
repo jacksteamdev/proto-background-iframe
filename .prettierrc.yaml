@@ -1,0 +1,7 @@
+semi: false
+singleQuote: true
+plugins:
+  - "./node_modules/prettier-plugin-svelte"
+overrides:
+  - files: "*.svelte"
+    options: { parser: "svelte" }
