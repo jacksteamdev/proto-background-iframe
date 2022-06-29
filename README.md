@@ -8,6 +8,8 @@ Run `pnpm dev`, install `./dist` in the browser extensions dashboard, and open [
 
 A content script will inject an iframe into the middle of the tab. This iframe contains an extension page which has access to most of the same Chrome API as the background page.
 
+![screenshot](screenshot.png)
+
 ### Advantages
 
 1. Unlike a service worker, this is a persistent environment, as long as the portal is open, the iframe environment exists.
